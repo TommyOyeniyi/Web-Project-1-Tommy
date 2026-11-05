@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms Practice</title>
+  </head>
+  <body>
+    <h1>HTML Forms Practice</h1>
+    <h2>
+      NOTE: The form on this page is for a school project. DO NOT PUT ANY
+      PERSONAL INFORMATION INTO THE FORM BELOW!
+    </h2>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="links-and-images.html">Links and Images</a></li>
+          <li><a href="unordered-ordered-discription-list.html">Lists</a></li>
+          <li><a href="headings-and-paragraphs.html">Headings and Paragraphs</a></li>
+          <li><a href="human-id.html">Human id</a></li>
+        </ul>
+      </nav>
+
+    <h3>Getting to Know My Users</h3>
+    <form
+      id="knowing-you"
+      name="getting-to-know-you"
+      method="get"
+      action="index.html">
+      <fieldset form="knowing-you">
+        <legend>Contact Information</legend>
+        <!--This is a label for the text input that will ask the user for their first and last name-->
+        <label for="name">Full Name (ex. Tom Holland) [required]:</label>
+        <input type="text" id="name" name="full-name" required />
+        <br />
+        <br />
+
+        <label for="email-address">
+          Email Address (ex. example@domain.com) [required]:
+        </label>
+        <!--This is a label for the text input that will ask the user for their email-->
+        <input type="email" id="email-address" name="email" required />
+        <br />
+        <br />
+
+        <label for="phone-number">Phone Number (ex. 1-234-567-8910):</label>
+        <input type="tel" id="phone-number" name="phone" />
+      </fieldset>
+      <!--This is a label for the text input that will ask the user for their phone number-->
+      <br />
+      <br />
+      <fieldset form="knowing-you">
+        <legend>Things You Like to Do</legend>
+        <!--This is a label for the text input that will ask the user for their favourite hobby -->
+        <label for="free-time"> Whats your favourite Hobby? [required] </label>
+        <input type="text" id="free-time" name="hobby" required />
+        <br />
+        <br />
+
+        <label for="hours-for-hobby">
+          How many hours a week do you get to do this hobby? [required]
+        </label>
+        <!--This is a drop label that asks the user how many hours a week they get to do their hobby-->
+        <input type="number" id="hours-for-hobby" name="hours" required />
+        <br />
+        <br />
+        <fieldset form="knowing-you">
+          <legend>Whats the best place to get donuts?</legend>
+
+          <input type="radio" name="donuts" id="donuts" value="donuts" />
+          <label for="donuts">Oh Donuts</label>
+          <br />
+
+          <input type="radio" name="donuts" id="donuts" value="donuts />
+          <label for="donuts">Tim Hortans</label>
+          <br />
+
+          <input type="radio" name="donuts" id="donuts" value="donuts" />
+          <label for="donuts">Bronuts</label>
+          <br />
+
+          <input type="radio" name="donuts" id="donuts" value="donuts" />
+          <label for="donuts">Marchi Donuts</label>
+          <br />
+
+          <input type="radio" name="donuts" id="metal" value="donuts" />
+          <label for="donuts">Krispy Kreme</label>
+          <br />
+
+          <input type="radio" name="donuts" id="donuts" value="donuts" />
+          <label for="donuts">Pronuts WPG</label>
+          <br />
+
+          <input type="radio" name="donuts" id="donuts" value="donuts" />
+          <label for="donuts">Donut house</label>
+          <br />
+
+          <input type="radio" name="donuts" id="other" value="other" />
+          <label for="other">Other Not Listed</label>
+          <br />
+        </fieldset>
+      </fieldset>
+      <br />
+      <br />
+      <!--This is a button that lets the user submit the form when they are done-->
+      <input
+        type="submit"
+        id="submit-button"
+        name="submit"
+        value="Click to Submit this Form" />
+      <br />
+      <br />
+      <br />
+      <!--This is a button that lets the user reset the form incase of mistakes or anything like that-->
+      <input
+        type="reset"
+        id="reset-button"
+        name="reset"
+        value="Click to Clear All Values in this Form" />
+    </form>
+    <!--This is a copyright symbol-->
+    <footer>
+<p>&#169;2026 Tommy Oyeniyi</p>
+  </footer>
+  </body>
+</html>
