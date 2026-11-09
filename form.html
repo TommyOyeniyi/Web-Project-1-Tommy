@@ -100,14 +100,27 @@
         </fieldset>
       </fieldset>
       <br />
-      <br />
+      <!-- This is a difficultyslider that lets the user rate the website on a scale of 1 to 10 -->
+      <fieldset>
+        <legend>Rate my Website</legend>
+        <label for="difficultyslider"
+        >Rate this website on a scale of 1 to 10</label>
+
+        <input 
+        type="range"
+        id="difficultyslider"
+        name="difficultyslider"
+        min="1"
+        max="10"
+        value="5" />
+      </fieldset>
       <!--This is a button that lets the user submit the form when they are done-->
+      <br /> 
       <input
         type="submit"
         id="submit-button"
         name="submit"
         value="Click to Submit this Form" />
-      <br />
       <br />
       <br />
       <!--This is a button that lets the user reset the form incase of mistakes or anything like that-->
